@@ -17,7 +17,8 @@ public class Prob2_김지훈{
 		 * 소문자로 변경하는 코드를 완성 합니다.
 		 */
 		char ch = 'P';
-		if (ch>=65 && ch<=90)
-			System.out.println((char)((int)ch + 32) + " 변환된값 출력");
+		
+		char res2 = ch > 'A' && ch < 'Z' ? (char)((int)ch + 32) : ch;
+		System.out.printf("%c %s" ,res2,"변환된 값 출력");
 	}
 }
