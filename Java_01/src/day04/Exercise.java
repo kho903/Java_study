@@ -18,7 +18,7 @@ public class Exercise {
 			} else {
 				sum2 += i;
 			}
-			if (sum2 > 100) {
+			if (sum2 >= 100) {
 				break;
 			}
 			i += 1;
