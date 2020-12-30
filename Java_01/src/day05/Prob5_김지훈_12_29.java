@@ -34,16 +34,16 @@ public class Prob5_김지훈_12_29 {
 	}
 
 	public static String leftPad(String str, int size, char padChar) {
-		/* 여기에 프로그램을 완성하십시오. */
-		if (size > str.length()) {
-			int strlen = str.length();
-			for (int i = 0; i < size - strlen; i++) {
-				str = padChar + str;
-			}
-			return str;
-		} else {
+		if (size <= str.length()) {
 			return str;
 		}
+		int count = size - str.length();
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < count; i++) {
+			sb.append(padChar);
+		}
+		sb.append(str);
+		return sb.toString();
 
 	}
 
