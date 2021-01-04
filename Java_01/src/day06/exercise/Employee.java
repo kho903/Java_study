@@ -24,6 +24,7 @@ public class Employee extends Person {
 
 	@Override
 	public void print() {
-		System.out.printf("이름 : %s  나이 : %d  부      서 : %s\n", getName(), getAge(),getDept());
+		super.print();
+		System.out.printf("부      서 : %s\n", getDept());
 	}
 }

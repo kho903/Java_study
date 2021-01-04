@@ -25,5 +25,6 @@ public class Person {
 	}
 
 	public void print() {
+		System.out.printf("이름 : %s  나이 : %d  ", name, age);
 	}
 }

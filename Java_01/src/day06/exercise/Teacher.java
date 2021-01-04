@@ -24,6 +24,7 @@ public class Teacher extends Person{
 
 	@Override
 	public void print() {
-		System.out.printf("이름 : %s  나이 : %d  담당과목 : %s\n", getName(), getAge(), getSubject());
+		super.print();
+		System.out.printf("담당과목 : %s\n", getName(), getAge(), getSubject());
 	}
 }

@@ -24,6 +24,7 @@ public class Student extends Person {
 
 	@Override
 	public void print() {
-		System.out.printf("이름 : %s  나이 : %d  학      번 : %s\n", getName(), getAge(), getId());
+		super.print();
+		System.out.printf("학      번 : %s\n", getName(), getAge(), getId());
 	}
 }
